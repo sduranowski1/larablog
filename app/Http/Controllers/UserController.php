@@ -31,7 +31,7 @@ class UserController extends Controller
             'name' => ['required', 'min:3'],
             'email' => ['required', 'email', Rule::unique('users', 'email')],
             'password' => 'required|confirmed|min:6',
-            'bio' => 'required|confirmed|min:6'
+            'bio' => 'required|min:6'
         ]);
 
         // Hash Password
