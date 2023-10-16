@@ -30,12 +30,13 @@ class ListingResource extends Resource
                 //
                 TextInput::make('id'),
                 TextInput::make('user_id'),
+                TextInput::make('category_id'),                
                 TextInput::make('title'),
-                TextInput::make('email'),
-                TextInput::make('company'),
-                TextInput::make('location'),
-                TextInput::make('website'),
-                TextInput::make('tags'),
+                // TextInput::make('email'),
+                // TextInput::make('company'),
+                // TextInput::make('location'),
+                // TextInput::make('website'),
+                // TextInput::make('tags'),
                 TextInput::make('description'),
                 Select::make('category')
                     ->relationship('category_id', 'name')
@@ -52,12 +53,12 @@ class ListingResource extends Resource
                 //
                 TextColumn::make('id'),
                 TextColumn::make('title'),
-                TextColumn::make('email'),
-                TextColumn::make('company'),
-                TextColumn::make('location'),
-                TextColumn::make('website'),
-                TextColumn::make('tags'),
-                TextColumn::make('category'),
+                // TextColumn::make('email'),
+                // TextColumn::make('company'),
+                // TextColumn::make('location'),
+                // TextColumn::make('website'),
+                // TextColumn::make('tags'),
+                TextColumn::make('category_id'),
             ])
             ->filters([
                 //
