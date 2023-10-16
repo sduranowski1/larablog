@@ -67,6 +67,7 @@ class ListingController extends Controller
 
         $formFields = $request->validate([
             'title' => 'required',
+            'category_id' => 'required',
             // 'company' => ['required'],
             // 'location' => 'required',
             // 'website' => 'required',

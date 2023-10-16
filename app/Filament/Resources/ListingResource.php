@@ -30,7 +30,7 @@ class ListingResource extends Resource
                 //
                 TextInput::make('id'),
                 TextInput::make('user_id'),
-                TextInput::make('category_id'),                
+                // TextInput::make('category_id'),                
                 TextInput::make('title'),
                 // TextInput::make('email'),
                 // TextInput::make('company'),
@@ -39,7 +39,7 @@ class ListingResource extends Resource
                 // TextInput::make('tags'),
                 TextInput::make('description'),
                 Select::make('category')
-                    ->relationship('category_id', 'name')
+                    ->relationship('category', 'name')
                     ->required()
                     ->preload()
 
