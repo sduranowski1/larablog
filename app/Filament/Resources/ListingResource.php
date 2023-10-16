@@ -28,8 +28,12 @@ class ListingResource extends Resource
         return $form
             ->schema([
                 //
-                TextInput::make('id'),
-                TextInput::make('user_id'),
+                // TextInput::make('id'),
+                // TextInput::make('user_id'),
+                Select::make('user')
+                ->relationship('user', 'name')
+                ->required()
+                ->preload(),
                 // TextInput::make('category_id'),                
                 TextInput::make('title'),
                 // TextInput::make('email'),
@@ -53,6 +57,7 @@ class ListingResource extends Resource
                 //
                 TextColumn::make('id'),
                 TextColumn::make('title'),
+                Textcolumn::make('user_id'),
                 // TextColumn::make('email'),
                 // TextColumn::make('company'),
                 // TextColumn::make('location'),
