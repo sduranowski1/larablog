@@ -30,6 +30,7 @@ class UserResource extends Resource
                 TextInput::make('email')->email(),
                 TextInput::make('password')->password(),
                 TextInput::make('name')->password(),
+                TextInput::make('bio'),
                 // Select::make('name')->options([
                 //     'test' => 'test as name',
                 //     'yt' => 'test as yo',
@@ -51,6 +52,7 @@ class UserResource extends Resource
                 TextColumn::make('id'),
                 TextColumn::make('name'),
                 TextColumn::make('email'),
+                TextColumn::make('bio'),
             ])
 
             ->filters([

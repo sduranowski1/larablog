@@ -57,7 +57,7 @@ class ListingResource extends Resource
                 //
                 TextColumn::make('id'),
                 TextColumn::make('title'),
-                Textcolumn::make('user_id'),
+                TextColumn::make('user_id'),
                 // TextColumn::make('email'),
                 // TextColumn::make('company'),
                 // TextColumn::make('location'),
