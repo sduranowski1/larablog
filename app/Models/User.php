@@ -55,6 +55,6 @@ class User extends Authenticatable implements FilamentUser
 
     // Relationship With Listings
     public function listings() {
-        return $this->hasMany(Listing::class, 'user_id', 'name');
+        return $this->hasMany(Listing::class, 'user_id');
     }
 }

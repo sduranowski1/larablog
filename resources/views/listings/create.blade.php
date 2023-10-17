@@ -36,8 +36,7 @@
                             <option  disabled selected>Select Role</option>        
                         </select>
                </div>
-             <label class="col-sm-4 col-form-label"  id="displayUser">Show selected User 
-               here</label>
+             <label class="col-sm-4 col-form-label"  id="displayUser"></label>
              </div>
 
                 @error('category')

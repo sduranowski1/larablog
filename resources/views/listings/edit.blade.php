@@ -16,17 +16,27 @@
             @method('PUT')
             <div class="mb-6">
                 <label
-                    for="category"
+                    for="category_id"
                     class="inline-block text-lg mb-2"
                     >Category</label
                 >
-                <input
+                {{-- <input
                     type="text"
                     class="border border-gray-200 rounded p-2 w-full"
                     name="category"
                     value="{{$listing->category_id}}"
-                />
-
+                /> --}}
+                <div class="form-group row">    
+                    <div class="col-sm-8">
+                        <select class="form-control" name="category_id" required focus>
+                            <option value="1"  selected>Vegeterian dish</option>        
+                            <option value="2"  selected>Fish</option>     
+                            <option value="3"  selected>Beef steak</option>    
+                            <option  disabled selected>Select Role</option>        
+                        </select>
+               </div>
+             <label class="col-sm-4 col-form-label"  id="displayUser"></label>
+             </div>
                 @error('category')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
@@ -40,7 +50,7 @@
                     type="text"
                     class="border border-gray-200 rounded p-2 w-full"
                     name="title"
-                    placeholder="Example: Spaghetti
+                    placeholder="Example: Spaghetti"
                     value="{{$listing->title}}"
                 />
                 @error('title')
