@@ -14,6 +14,9 @@
       <div class="text-lg mt-4">
         <i class="fa-solid fa-location-dot"></i> {{$listing->user->name}}
       </div>
+      <div class="text-lg mt-4">
+        <i >{{$listing->created_at}}</i> 
+      </div>
         <p class="fa-solid">{{$listing->description}}</p> 
       <!-- <div class="text-xl font-bold mb-4">{{$listing->price}}</div> -->
       <!-- <button class="h-10 w-20 text-white rounded-lg bg-laravel hover:bg-indigo-700">${{$listing->price}}</button> -->
