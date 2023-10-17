@@ -29,7 +29,7 @@ class UserResource extends Resource
                 //
                 TextInput::make('email')->email(),
                 TextInput::make('password')->password(),
-                TextInput::make('name')->password(),
+                TextInput::make('name'),
                 TextInput::make('bio'),
                 // Select::make('name')->options([
                 //     'test' => 'test as name',
