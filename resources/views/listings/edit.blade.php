@@ -152,7 +152,7 @@
                     class="border border-gray-200 rounded p-2 w-full"
                     name="description"
                     rows="10"
-                    placeholder="Include tasks, requirements, salary, etc"
+                    placeholder="Include tasks, products, etc"
                 >{{$listing->description}}</textarea>
                 @error('description')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
